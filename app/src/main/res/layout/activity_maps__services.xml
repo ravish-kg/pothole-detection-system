@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="431dp"
+        tools:context="com.example.ravish.pothole_detection.Maps_Services" />
+
+    <LinearLayout
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:backgroundTint="#c5dddd"
+        android:baselineAligned="true"
+        android:dividerPadding="@dimen/abc_action_bar_overflow_padding_end_material"
+        android:foregroundTint="#ddd6d6"
+        android:transitionName="@string/abc_action_menu_overflow_description">
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance is "
+            android:textColor="#5d198e"
+            android:textSize="@dimen/abc_action_bar_icon_vertical_padding_material"
+            android:padding="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:text="No of Potholes "
+            android:textColor="#5d198e"
+            android:textSize="@dimen/abc_action_bar_icon_vertical_padding_material"
+            android:padding="8dp" />
+        <Button
+            style="?android:textAppearanceSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Get Distance"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:onClick="showDistance"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Pothole Detection</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="map_fragment">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="generate_fragment">Generate</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="feedback_fragment">Feedback</string>
+    <string name="title_activity_maps__services">Map</string>
+</resources>
